@@ -2,8 +2,6 @@
 
 Jeeves is a personal operations agent. It turns information that is normally spread across calendars, inboxes, weather forecasts, travel tools, and personal preferences into a useful daily brief. It can also recommend places and products based on what its user actually likes.
 
-This repository is a public blueprint, not a copy of my agent. Every example is fictional. It contains no personal memory, messages, calendar events, credentials, or private configuration.
-
 ## What you are building
 
 A useful personal agent needs four kinds of context:
@@ -65,14 +63,10 @@ Run a morning brief through a scheduled job. Do not keep a heartbeat running onl
 
 - `workspace/AGENTS.md`: operating rules and startup routine.
 - `workspace/SOUL.md`: the agent's stance, tone, and boundaries.
-- `workspace/USER.example.md`: fictional stable preferences to replace locally.
+- `workspace/USER.example.md`: example stable preferences to replace locally.
 - `workspace/skills/daily-brief/SKILL.md`: a provider-neutral daily brief workflow.
-- `examples/daily-brief.md`: a fictional output showing the intended level of detail.
+- `examples/daily-brief.md`: an example showing the intended level of detail.
 - `SECURITY.md`: what must remain out of Git and how to review changes.
-
-## What is deliberately missing
-
-This repository does not include API keys, OAuth tokens, real addresses, private contacts, live memory, calendar data, email content, SSH configuration, or a production `openclaw.json`. Provider and channel configuration belongs in your private OpenClaw installation, not in a public workspace template.
 
 ## Next steps
 
