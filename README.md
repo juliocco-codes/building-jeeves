@@ -1,4 +1,4 @@
-# Build your own Jeeves
+# Building Jeeves
 
 Jeeves is a personal operations agent. It turns information that is normally spread across calendars, inboxes, weather forecasts, travel tools, and personal preferences into a useful daily brief. It can also recommend places and products based on what its user actually likes.
 
