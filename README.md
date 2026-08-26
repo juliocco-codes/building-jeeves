@@ -79,4 +79,4 @@ Once the daily brief is dependable, add one workflow at a time:
 
 ## License
 
-MIT. See `LICENSE`.
+Available for personal and non-commercial use. See `LICENSE` for details.
