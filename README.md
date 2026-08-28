@@ -23,6 +23,13 @@ Keep these layers separate. It makes the agent easier to correct and prevents ye
 6. Test the agent manually before scheduling anything.
 7. Add one skill at a time and review its output before granting write access.
 
+The included Node.js tool turns calendar, weather, inbox, and preference data into the structured context used by the daily brief. Retrieval stays outside this layer, so each service can be connected with the narrowest permissions available.
+
+```bash
+npm test
+node src/cli.mjs examples/context.json
+```
+
 OpenClaw loads workspace skills from `<workspace>/skills/<skill>/SKILL.md`. Its official [skills documentation](https://docs.openclaw.ai/skills) explains precedence, installation, and configuration.
 
 ## A sensible first version
@@ -65,6 +72,9 @@ Run a morning brief through a scheduled job. Do not keep a heartbeat running onl
 - `workspace/SOUL.md`: the agent's stance, tone, and boundaries.
 - `workspace/USER.example.md`: example stable preferences to replace locally.
 - `workspace/skills/daily-brief/SKILL.md`: a provider-neutral daily brief workflow.
+- `src/brief-context.mjs`: deterministic preparation of calendar, weather, and inbox context.
+- `src/cli.mjs`: command-line entry point for building a brief packet.
+- `test/`: executable tests for the deterministic layer.
 - `examples/daily-brief.md`: an example showing the intended level of detail.
 - `SECURITY.md`: what must remain out of Git and how to review changes.
 

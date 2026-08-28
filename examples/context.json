@@ -1,0 +1,17 @@
+{
+  "events": [
+    { "id": "event-1", "summary": "Project review", "start": "2026-08-29T09:00:00Z", "location": "Office" }
+  ],
+  "weather": {
+    "minimum_c": 13,
+    "maximum_c": 20,
+    "hourly": [{ "time": "09:00", "rain_probability": 30 }]
+  },
+  "messages": [
+    { "id": "message-1", "sender": "friend@example.test", "subject": "Dinner next week", "unread": true, "requires_reply": true }
+  ],
+  "preferences": {
+    "important_senders": ["friend@example.test"],
+    "brief": { "style": "concise", "include_empty_sections": false }
+  }
+}
